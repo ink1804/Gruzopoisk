@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AutorizationAct"
+    android:background="#3e4eb8"
+    android:id="@+id/relAuth">
+
+    <ImageView
+        android:layout_width="550px"
+        android:layout_height="50dp"
+        android:background="@drawable/logo_gruzopoisk"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/loginET"/>
+
+
+    <EditText
+        android:id="@+id/loginET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/passwordET"
+        android:background="@drawable/testline"
+        android:textColor="@color/white"
+        android:textColorHint="#6e78c7"
+        android:layout_marginTop="10dp"
+        android:hint="eMail/cell"/>
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/testline"
+        android:layout_centerVertical="true"
+        android:hint="password"
+        android:textColor="@color/white"
+        android:textColorHint="#6e78c7"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/logInBTN"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Log In"
+        android:background="@color/blueButton"
+        android:textColor="@color/white"
+        android:layout_below="@+id/passwordET"
+        android:onClick="Log_in_Click"/>
+
+    <TextView
+        android:id="@+id/errorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="error and bla bla bla"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logInBTN"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+</RelativeLayout>

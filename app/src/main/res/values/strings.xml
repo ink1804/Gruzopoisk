@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Gruzopoisk</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list">ListAct</string>
+    <string name="title_activity_info_request">InfoRequestAct</string>
+    <string name="title_activity_info_reques">InfoRequesAct</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+
+    <color name="white">#ffffff</color>
+    <color name="toolBarColor">#3e4eb8</color>
+    <color name="topColor">#2f3ca2</color>
+    <color name="blueButton">#1194f7</color>
+    <color name="greenText">#6abf6c</color>
+    <color name="greyText">#808080</color>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

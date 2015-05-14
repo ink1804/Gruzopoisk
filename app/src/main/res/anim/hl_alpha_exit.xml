@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    имя анимации будет выглядеть в виде:
+     rl_slide = right->left slide  - слайд справа налево
+     tb_slide = top->bottom slide  - слайд сверху вниз
+     r l t b
+     hl_alpha = high->low alpha - затемнение
+     приписка _exit означает что поле для уходящей активити, а enter - приходящей
+     -->
+    <alpha
+        android:duration="300"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.5"/>
+</set>

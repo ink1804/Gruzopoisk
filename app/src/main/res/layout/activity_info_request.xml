@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl2"
+    tools:context="com.ink1804.gruzopoisk.Activities.InfoRequestAct"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/from_to_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No data"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nothing"
+            android:textSize="18sp"
+            android:layout_marginTop="7dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            android:textColor="@color/greenText"/>
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/load_dateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дата выгрузки: "
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="7dp"
+            android:text=""
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/firm_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+            <TextView
+                android:id="@+id/about_firm"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                />
+            <TextView
+                android:id="@+id/user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/map"
+            tools:context="com.ink1804.gruzopoisk.Activities.InfoRequestAct"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
