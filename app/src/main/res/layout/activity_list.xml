@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListAct"
+    >
+
+    <fragment
+        android:id="@+id/fragm"
+        android:name="com.ink1804.gruzopoisk.fragmentClases.listF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/listfragment_fon"
+        android:layout_below="@+id/btn1">
+    </fragment>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
